@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HireLane
 
-## Getting Started
+HireLane is a Career Command Center designed to help students and job seekers manage their job search journey in one place.
 
-First, run the development server:
+## MVP Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Authentication
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* User Sign Up
+* User Login
+* User Logout
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Dashboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Stats Overview
+* Upcoming Interviews
+* Upcoming Deadlines
+* Activity Timeline
+* Quick Actions
+* Application Pipeline Overview
 
-## Learn More
+### Applications
 
-To learn more about Next.js, take a look at the following resources:
+* Application Tracking
+* Kanban Board
+* Table View
+* Add/Edit/Delete Applications
+* Search & Filters
+* Application Details Drawer
+* Resume Tracking
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Interviews
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Interview Tracking
+* Interview Rounds
+* Preparation Notes
+* Questions Asked
+* Feedback
+* Outcomes
+* Interview Timeline
 
-## Deploy on Vercel
+### Profile
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Personal Information
+* Academic Information
+* Career Preferences
+* Resume Library
+* Resume Management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+### Frontend
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* Supabase
+* PostgreSQL
+
+### Deployment
+
+* Vercel
+
+## Project Structure
+
+src/
+├── services/
+├── types/
+├── constants/
+├── mock/
+├── app/
+└── lib/
+
+## Backend Services
+
+### Authentication
+
+* signUp()
+* signIn()
+* signOut()
+
+### Profile
+
+* createProfile()
+* getProfile()
+* updateProfile()
+
+### Applications
+
+* createApplication()
+* getApplications()
+* updateApplication()
+* deleteApplication()
+
+### Interviews
+
+* createInterview()
+* getInterviews()
+* updateInterview()
+* deleteInterview()
+
+### Dashboard
+
+* getApplicationStats()
+* getUpcomingInterviews()
+* getUpcomingDeadlines()
+
+## Team
+
+### Person A
+
+Frontend Development
+
+* UI Design
+* Page Development
+* Components
+* User Experience
+
+### Person B
+
+Backend Development
+
+* Database Design
+* Supabase Integration
+* Authentication
+* CRUD Services
+* Documentation
+
+## Status
+
+Current Phase:
+Backend and Frontend Development
+
+Next Phase:
+Frontend-Backend Integration
+
+## License
+
+MIT License
